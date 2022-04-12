@@ -1,0 +1,77 @@
+.home{
+    width: 100%;
+    min-height: 900px;
+    background-color: $green;
+    margin: 0 auto;
+
+    .hero-image{
+        width: 100%;
+        height: 500px;
+        background-image: url("../images/echeveria-background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .hero-text{
+            background-color: $light-green;
+            width: 400px;
+            border: 5px solid $blue;
+                text-align: center;
+                padding: 40px;
+                color: $black;
+        }
+    }
+
+    .care-preview{
+        width: 100%;
+        background-color: $blue;
+        color: $lavender;
+        padding: 40px;
+        h2{
+            text-transform: uppercase;
+        }
+        p{
+            width: 60%;
+        }
+    }
+
+    .plants-preview{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        color: $black;
+        padding: 40px;
+
+        .plants{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-top: 20px;
+
+            .plant{
+                background-color: $light-green;
+                border: 1px solid $black;
+
+                img{
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home{
+        .plants-preview{
+            .plants{
+                flex-direction: column;
+                .plant{
+                    margin: 20px;
+                }
+            }
+        }
+    }
+  }
